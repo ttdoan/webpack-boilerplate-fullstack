@@ -6,8 +6,12 @@
   "author": "Tania Rascia <tania@taniarascia.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+    "start": "npm run build && node ./build/server.js",
+    "build": "babel -d ./build ./server -s && cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "client": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.dev.js",
+    "server": "nodemon --exec babel-node src/server.js",
+    "dev": "concurrently 'npm run server' 'npm run client'",
+    "clean": "rm -fr build/* dist/*"
   },
   "keywords": [
     "webpack",

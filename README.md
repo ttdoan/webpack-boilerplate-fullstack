@@ -76,10 +76,6 @@ Following npm `scripts` are predefined in package.json:
 - [`optimize-css-assets-webpack-plugin`](https://github.com/NMFR/optimize-css-assets-webpack-plugin) - Optimize and minimize CSS assets.
 - [`terser-webpack-plugin`](https://github.com/webpack-contrib/terser-webpack-plugin) - Minify JavaScript.
 
-## Author
-
--
-
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).

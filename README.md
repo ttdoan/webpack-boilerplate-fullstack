@@ -1,43 +1,31 @@
-# 📦 Webpack Boilerplate
+# 📦 Webpack Boilerplate for Full Stack
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) ![David](https://img.shields.io/david/dev/taniarascia/webpack-boilerplate)
 
-Minimal Webpack 4 boilerplate with Babel, Sass, ESLint, Hot Module Replacement, and development/production optimization.
+Minimal Webpack 4 boilerplate for fullstack projects with Babel, Sass, ESLint, Hot Module Replacement, and development/production optimization.
+
+Original boilerplate was leveraged from [Tania Rascia](https://www.taniarascia.com), and I made the following additions:
+
+- Added additional scripts
+- Updated source file directory structure
 
 ## Installation
 
 ```
-git clone git@github.com:taniarascia/webpack-boilerplate
-npm i
+git clone https://github.com/ttdoan/webpack-boilerplate-fullstack.git
+npm install
 ```
 
 ## Usage
 
-### Development server
+Following npm `scripts` are predefined in package.json:
 
-```bash
-npm start
-```
-
-You can view the development server at `localhost:8080`.
-
-### Production build
-
-```bash
-npm run build
-```
-
-> Note: Install [http-server](https://www.npmjs.com/package/http-server) globally to deploy a simple server.
-
-```bash 
-npm i -g http-server
-```
-
-You can view the deploy by creating a server in `dist`. 
-
-```bash
-cd dist && http-server
-```
+- `start` - Create a production build and start backend server
+- `build` - Create a production build for both client and server
+- `client` - Start the development server for client
+- `server` - Start the development server for backend
+- `dev` - Start the development server for both client and backend
+- `clean` - Remove previous build files
 
 ## Features
 
@@ -90,7 +78,7 @@ cd dist && http-server
 
 ## Author
 
-- [Tania Rascia](https://www.taniarascia.com)
+-
 
 ## License
 
